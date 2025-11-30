@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Coffee Shop — Утренний кофе в космосе</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Cosmic Coffee  ☕</div>
+            <ul class="nav-menu">
+                <li><a href="#coffee">Наш кофе</a></li>
+                <li><a href="#recipes">Рецепты</a></li>
+                <li><a href="#order">Закажи</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-content">
+            <h1>КОСМИЧЕСКИЙ КОФЕ</h1>
+            <p>Пробуждение среди звёзд. Утренний ритуал в невесомости.</p>
+            <button class="cta-button">Открыть меню</button>
+        </div>
+        <div class="floating-cup" data-aos="zoom-in">
+            <div class="coffee-cup"></div>
+        </div>
+    </section>
+
+    <section id="coffee" class="section coffee-section">
+        <div class="container">
+            <h2 data-aos="fade-right">Наш кофе</h2>
+            <p data-aos="fade-left">Отборные зёрна из космических плантаций</p>
+            <div class="coffee-beans-animation">
+                <div class="coffee-cup-target"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recipes" class="section recipes-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Космические рецепты</h2>
+            <div class="recipes-grid">
+                <div class="recipe-card" data-aos="flip-left">
+                    <h3>Галактический латте</h3>
+                    <p>Эспрессо, звёздное молоко, сироп туманности</p>
+                </div>
+                <div class="recipe-card" data-aos="flip-left" data-aos-delay="200">
+                    <h3>Чёрная дыра</h3>
+                    <p>Тёмная обжарка, карамель, космическая пыль</p>
+                </div>
+                <div class="recipe-card" data-aos="flip-left" data-aos-delay="400">
+                    <h3>Орбитальный капучино</h3>
+                    <p>Сбалансированный вкус с нотками ванили</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="section order-section">
+        <div class="container">
+            <h2 data-aos="zoom-in">Закажи космический кофе</h2>
+            <form class="order-form" data-aos="fade-up">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Космическая почта" required>
+                <select>
+                    <option>Выберите напиток</option>
+                    <option>Галактический латте</option>
+                    <option>Чёрная дыра</option>
+                    <option>Орбитальный капучино</option>
+                </select>
+                <button type="submit" class="submit-btn">Запустить заказ  🚀</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Cosmic Coffee Shop © 2024 — Кофе среди звёзд</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
